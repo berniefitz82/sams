@@ -6,6 +6,9 @@ float (*func)(int arg);
 int (*func[])(char* my_string); // This function could take a menu option and then execute that function
 char * my_var[10];
 
+int ex8_func(char * my_var);
+void numbers(int *a, int *b, int*c);
+
 struct linked_list_item {
     char * name;
     char * address;
