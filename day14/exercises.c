@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <stdarg.h>
 
 void ex6(char* my_arg[]);
 char (*p)(char * my_arg[]);
@@ -7,7 +8,7 @@ int (*func[])(char* my_string); // This function could take a menu option and th
 char * my_var[10];
 
 int ex8_func(char * my_var);
-void numbers(int *a, int *b, int*c);
+void numbers(int *nt1, int *int2, int *int3);
 
 struct linked_list_item {
     char * name;
@@ -16,6 +17,8 @@ struct linked_list_item {
 };
 
 int main(void) {
+    int one, two, three = 0;
+    numbers(&one, &two, &three);
     float my_float;
     float *my_float_ptr = &my_float;
     float **my_float_ptr_ptr = &my_float_ptr;
